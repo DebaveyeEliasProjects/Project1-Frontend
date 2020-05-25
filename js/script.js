@@ -16,6 +16,12 @@ const listenToHamburgerMenu = function(){
 
 }
 
+const getSensors = function(){
+
+    
+
+}
+
 
 const init = function() {
     document.querySelector(".js-nav__hamburger-slider").classList.add("u-hidden");
