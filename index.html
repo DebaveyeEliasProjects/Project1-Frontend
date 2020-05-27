@@ -25,6 +25,9 @@
     <meta name="theme-color" content="#00c2bc">
 
     <!-- Your JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/dataHandler.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -61,8 +64,15 @@
         </div>
         
     </head>
-    <section>
-
+    <section class="c-page__section">
+        <h1 class="o-title">Metingen</h1>
+        <h2 class="o-subtitle">Zuurtegraad</h2>
+        
+        <canvas class="chart" id="myChart4" width="1000" height="600" aria-label="Hello ARIA World" role="img"></canvas>
+        <h2 class="o-subtitle">Orp</h2>
+        <canvas class="chart" id="myChart5" width="1000" height="600" aria-label="Hello ARIA World" role="img2"></canvas>
+        <h2 class="o-subtitle">Temperatuur</h2>
+        <canvas class="chart" id="myChart6" width="1000" height="600" aria-label="Hello ARIA World" role="img3"></canvas>
     </section>
 
 </body>
