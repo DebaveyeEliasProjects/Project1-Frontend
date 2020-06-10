@@ -32,22 +32,11 @@
     <script src="js/notify.js"></script>
     <script src="js/script.js"></script>
 </head>
-<body class="body">
-    <div class="c-error js-error">
-        <div class="c-error_message" >
-            <div class="c-error_info">
-                <h3>Error</h3>
-                <h5>There is no data found for this date.</h5>
-            </div>
-            <div class="c-errorClose">
-                <button class="c-control__button js-error__close">Close</button>
-            </div>
-            
-        </div>
-    </div>
+<body>
     <nav class="js-nav__hamburger-slider c-nav__hamburger-slider">
+
         <ul class="js-nav__hamburger-slider c-nav__hamburger-links">
-            <li class="c-nav__item c-nav__hamb-item "><a href="index.html" class="c-nav__link">Statistics</a></li>
+            <li class="c-nav__item c-nav__hamb-item"><a href="index.html" class="c-nav__link">Statistics</a></li>
             <li class="c-nav__item c-nav__hamb-item"><a href="control.html" class="c-nav__link">Control</a></li>
             <li class="c-nav__item c-nav__hamb-item"><a href="information.html" class="c-nav__link">Information</a></li>
         </ul>
@@ -59,9 +48,9 @@
         </div>
         <div class="c-nav__hamb">
             <ul class="c-nav">
-                <li class="c-nav__item "><a href="index.html" class=" c-nav__link">Statistics</a></li>
+                <li class="c-nav__item"><a href="index.html" class="c-nav__link">Statistics</a></li>
                 <li class="c-nav__item"><a href="control.html" class="c-nav__link">Control</a></li>
-                <li class="c-nav__item"><a href="information.html" class="c-nav__link">Information</a></li>
+                <li class="c-nav__item"><a href="#" class="c-nav__link">Information</a></li>
             </ul>
             
         </div>
@@ -77,29 +66,12 @@
         </div>
         
     </head>
-    <section class="c-page__section js-main">
-        <h1 class="o-title">Measurements</h1>
-        <div class="c-holder_holder">
-            <div class="c-control_holder">
-                <div class="c-control_date">
-                    <label class="c-label" for="dates">Select date</label>
-                    <input type="date" class="js-date"> 
-                </div>
-                <div class="c-control_last5">
-                    <Button class="js-last5 c-control__button" value="latest">Show last 5 readings</Button>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-
-        <h2 class="o-subtitle js-acidity_title">Acidity</h2>
-        <canvas class="chart" id="myChart4" aria-label="Acidity" role="img"></canvas>
-        <h2 class="o-subtitle js-orp_title">ORP <span class="o-small_text">(Oxidation Reduction Potential)</span></h2>
-        <canvas class="chart" id="myChart5" aria-label="ORP" role="img2"></canvas>
-        <h2 class="o-subtitle js-temp_title">Temperature</h2>
-        <canvas class="chart" id="myChart6" aria-label="Temperature" role="img3"></canvas>
+    <section class="c-page__section js-information">
+        <h1 class="o-title">Information</h1>
+        <p class="o-small">Project @ <span class="o-important">MCT</span></p>
+        <p class="o-small">Created by <span class="o-important">Debaveye Elias</span></p>
+        <h2 class="o-title">About Aquastats</h2>
+        <p>Aquastats is a smart pool messurement tool that will help you to invest in pool chemics.</p>
     </section>
 
 </body>

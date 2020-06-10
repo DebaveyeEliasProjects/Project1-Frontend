@@ -40,10 +40,13 @@ html {
     color: #FFFFFF;
 }
 
+
+
 .c-nav__link:hover,
 .c-nav__link:focus {
     color: #434D4C;
 }
+
 
 .c-nav__bar{
     position: absolute;
@@ -100,6 +103,11 @@ html {
 
 .c-nav {
     display: flex;
+}
+
+.c-nav__current{
+    color:#00fff1;
+
 }
 
 .u-hidden {
@@ -175,6 +183,176 @@ canvas{
     width: 80%;
     margin: 0 auto;
     margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.c-date__select{
+
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: raleway;
+
+}
+
+.c-date__select option:checked{
+    font-weight: 700;
+}
+
+.c-label{
+    font-family: raleway;
+    margin-right: 15px  ;
+}
+
+.c-status{
+
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 12px;
+    color: rgba(0, 0, 0, 0.80);
+}
+
+.c-control__button{
+
+    font-family: Raleway;
+    font-size: 18px;
+    padding: 5px 25px 5px 25px;
+    border: none;
+    background-color: #00ACA6;
+    color: white;
+    border-radius: 3px;
+
+}
+.c-control__button:hover{
+    cursor: pointer;
+}
+
+.c-control__button:active{
+    background-color: #009691;
+    border: none;
+    outline: none;
+}
+.c-control__button:link{
+    border: none;
+    outline: none;
+}
+
+.c-button__disabled{
+    background-color: #707777;
+}
+.c-button__disabled:hover{
+    cursor: not-allowed;
+}
+
+.c-button__disabled:active{
+    background-color: #707777;
+}
+
+
+.c-control_holder{
+
+    
+    display: flex;
+    justify-content: space-around;
+}
+.c-network{
+    display:flex;
+    flex-direction: column;
+    max-width: 40%;
+}
+.c-network_option{
+    margin-bottom: 10px;
+}
+
+@media(max-width:360px){
+    .c-network{
+        max-width: 75%;
+    }
+}
+
+.c-control_date{
+
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 7px 7px 5px -2px rgba(0,0,0,0.32);
+    -moz-box-shadow: 7px 7px 5px -2px rgba(0,0,0,0.32);
+    box-shadow: 7px 7px 5px -2px rgba(0,0,0,0.32);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 250px;
+    margin: 15px;
+}
+.c-control_last5{
+    padding: 25px;
+    width: 250px;
+    margin: 15px;
+    -webkit-box-shadow: 7px 7px 5px -2px rgba(0,0,0,0.32);
+    -moz-box-shadow: 7px 7px 5px -2px rgba(0,0,0,0.32);
+    box-shadow: 7px 7px 5px -2px rgba(0,0,0,0.32);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.c-error{
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.25 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.c-error_message{
+    background-color: white;
+    padding: 25px 75px 25px 75px;
+    display:flex;
+    justify-content: space-between;
+    -webkit-box-shadow: 7px 7px 5px -2px rgba(0,0,0,0.32);
+    -moz-box-shadow: 7px 7px 5px -2px rgba(0,0,0,0.32);
+    box-shadow: 7px 7px 5px -2px rgba(0,0,0,0.32);
+}
+
+
+
+.c-errorClose{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.c-error_info h3{
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.c-error_info h5{
+    margin: 0;
+    margin-right: 28px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+@media(max-width:630px){
+
+    .c-control_holder{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .c-holder_holder{
+        display: flex;
+        justify-content: center;
+    }
+    .c-error_message{
+        flex-direction: column;
+        max-width: 75%;
+        padding: 15px;
+    }
+    .c-errorClose{
+        margin-top: 12px;
+    }
+
 }
 
 .o-title{
@@ -191,5 +369,69 @@ canvas{
 
 }
 
+.o-small{
+    margin: 0;
+}
+
+.o-important{
+
+    font-weight: 600;
+
+}
+
+.o-small_text{
+    font-size: 18px;
+}
+
+@media(max-width:350px){
+    .c-page__section{
+        width: 95%;
+    }
+
+    .o-subtitle{
+        margin-left: 25px;
+    }
+}
+
+@media(min-width:350px){
+    .c-page__section{
+        width: 95%;
+    }
+
+    .o-subtitle{
+        margin-left: 25px;
+    }
+}
+
+@media(min-width:856px){
+    .c-page__section{
+        width: 85%;
+    }
+
+    .o-subtitle{
+        margin-left: 50px;
+    }
+}
+@media(min-width:1250px){
+    .c-page__section{
+        width: 60%;
+    }
+
+    .o-subtitle{
+        margin-left: 50px;
+    }
+}
+
+@media(min-witdh:1500px){
+
+    .chart{
+        width: 80%;
+        height: 20%;
+    }
+
+}
 
 
+.u-disable_overflow{
+    overflow-y: hidden;
+}
